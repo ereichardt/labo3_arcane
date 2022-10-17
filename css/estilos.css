@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(17, 22, 19);
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.35%;
+    background-image: url("../html/images/arcane banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position-x: center;   
+}
+
+a:visited{
+    color: rgba(95, 80, 62, 0.671);
+}
+a:hover{
+    color: rgba(153, 133, 109, 0.671);
+}
+
+nav ul {
+    margin-top: 2%;  
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;    
+}
+
+nav ul li a {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;    
+	text-transform: uppercase;
+    color: rgb(255, 208, 0);    
+
+    background-color: #0e052563;    
+    padding: 15px 25px;
+    text-decoration: none;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+nav ul li a:active{
+    background-color: #0e05259a;
+}
+
+nav ul li a:visited{
+    color: rgb(255, 208, 0);
+}
+
+.icon{
+    display: none;
+}
+
+h1{
+    display: none;
+}
+
+h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgba(141, 113, 81, 0.671);
+    background-color: black;
+}
+
+h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    color: rgba(141, 113, 81, 0.671);
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1.5%;
+}
+
+h4{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    color: rgba(141, 113, 81, 0.671);
+    text-decoration: underline;
+    margin-bottom: 1%;
+    margin-top: 1rem;
+}
+
+h4.links{
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    text-align: center;  
+    text-decoration: none;     
+}
+
+a{
+    text-decoration: none;
+}
+
+article.left{
+    text-align: center;
+}
+
+article.left img{
+    filter: brightness(0.8);
+    border-top-right-radius: 3.5%;
+    border-bottom-left-radius: 3.5%;
+    max-width: 90%;
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    margin-top: 1rem;
+}
+
+#critics{
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 15px;
+    
+}
+
+p{
+    color: blanchedalmond;
+    margin-bottom: 2.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+p.listado{
+    margin-bottom: 0.2rem;
+}
+
+.left{
+    width: 58%;
+    float: left;
+    padding: 6px;
+}
+.right{
+    width: 40%;
+    float: right;
+}
+
+.right a{
+    color: rgba(141, 113, 81, 0.671);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95rem;
+}
+
+.right div{
+    width: 40%;
+    align-content: center;
+    margin-top: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left h4:visited{
+    color: rgba(95, 80, 62, 0.671);
+}
+.left h4:hover{
+    color: rgba(153, 133, 109, 0.671);
+}
+
+.noticias h3{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2rem;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.noticias{
+    clear:both;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #031b1471;
+}
+.noticias div{
+    width: 33%;
+    padding: 2%;
+}
+.noticias div img{
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 330px;
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 3%;
+}
+
+hr{
+    border-width: 4px;
+    border-color:rgba(141, 113, 81, 0.671);    
+}
+
+footer{
+    padding-top: 3rem;
+    display: block;
+    text-align: center;    
+    height: 220px;
+    background-image: url("../html/images/fumes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position-x: center;
+}
+
+footer div.outside{    
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+footer div.outside img {
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
+    margin-right: 2.5%;
+    max-width: 2.5rem;
+}
+
+footer div.legales p{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 576px){
+    
+}

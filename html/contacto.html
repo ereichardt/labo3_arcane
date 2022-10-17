@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/estilos.css">-->
+    <title>Arcane Unofficial Fan Club</title>
+</head>
+<body>    <!--Se aplica a toda la pagina...  background="images/arcane banner.png"-->
+    <header>
+        <!--Usar un banner como background donde se pueda poner el nav por encima-->
+        <img src="images/arcane banner.png" alt="ARCANE BANNER">     
+        <h1>ARCANE</h1>                        <!--Dejarlo invisible y usar el titulo del banner?-->
+        <h2>Unofficial Fan Club</h2>
+        <nav>
+            <ul>
+                <li><a>Personajes</a></li>    <!--despliegue de menu con cada personaje?-->
+                <li><a>Temporadas</a></li>
+                <li><a>Media</a></li>
+                <li><a>Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Formulario de contacto de mozilla + boton de submit-->
+		<article class="contacto_izquierda">
+			<form action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <label for="name">Nombre:</label>
+                   <input type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">Correo electrónico:</label>
+                   <input type="email" id="mail" name="user_mail">
+                 </li>
+                 <li>
+                   <label for="msg">Mensaje:</label>
+                   <textarea id="msg" name="user_message"></textarea>
+                 </li>
+                 <li class="button">
+                    <button type="submit">Envíe su mensaje</button>
+                  </li>
+                </ul>
+               </form>
+		</article>
+		<article class="contacto_derecha">
+			<img src="images/contacto.png">
+		</article>
+    </section>
+	<hr style="clear: both"/>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://arcane.com/es-mx/"><img src="images/sitiooficial.png" alt="Sitio Oficial Arcane"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="images/navigation.png" alt="Navegación"></a></li>   <!--Navegacion Rapida del Sitio Web-->
+                <li><a href="#"><img src="images/contact.png" alt="Contacto"></a></li>   <!--Tiene sentido agregarlo?-->
+                <!--Boton para volver al inicio de la pagina??-->
+            </ul>
+            <!--Legales?-->
+            <p>©2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS y cualquier logotipo asociado a marcas registradas, marcas de servicio o marcas comerciales de Riot Games Inc.</p>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<!--CSS para el formulario-->
+.contacto_izquierda{
+	width: 60%;
+	float: left;
+}
+
+.contacto_derecha{
+	width: 40%;
+	float: right;
+}
+
+footer{
+	clear: both;
+}
