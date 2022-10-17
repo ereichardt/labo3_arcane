@@ -15,7 +15,7 @@ header {
     margin-right: auto;
     display: flex;
     justify-content: center;
-    padding: 0.35%;
+    /*padding: 0.35%;*/
     background-image: url("../html/images/arcane banner2.png");
     background-size: cover;
     background-repeat: no-repeat; 
