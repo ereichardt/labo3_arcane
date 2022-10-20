@@ -15,7 +15,7 @@ header {
     margin-right: auto;
     display: flex;
     justify-content: center;
-    padding: 0.35%;
+    /*padding: 0.35%;*/
     background-image: url("../html/images/arcane banner2.png");
     background-size: cover;
     background-repeat: no-repeat; 
@@ -170,6 +170,13 @@ p.listado{
     color: rgba(153, 133, 109, 0.671);
 }
 
+.right a:visited{
+    color: rgba(95, 80, 62, 0.671);
+}
+.right a:hover{
+    color: rgba(153, 133, 109, 0.671);
+}
+
 .noticias h3{
     max-width: 100%;
     margin-left: auto;
@@ -193,7 +200,7 @@ p.listado{
 .noticias div img{
     width: 100%;
     margin-bottom: 1rem;
-    height: 330px;
+    /*height: 330px;*/
     border-width: 4px;
     border-style: double;
     border-color:rgba(141, 113, 81, 0.671);
