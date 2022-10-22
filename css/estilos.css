@@ -6,6 +6,9 @@
 
 body {
     background-color:rgb(17, 22, 19);
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -15,7 +18,6 @@ header {
     margin-right: auto;
     display: flex;
     justify-content: center;
-    /*padding: 0.35%;*/
     background-image: url("../html/images/arcane banner2.png");
     background-size: cover;
     background-repeat: no-repeat; 
@@ -124,8 +126,7 @@ article.left img{
     border-width: 4px;
     border-style: double;
     border-color:rgba(141, 113, 81, 0.671);
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
 
 p{
@@ -163,18 +164,27 @@ p.listado{
     margin-right: auto;
 }
 
-.left h4:visited{
-    color: rgba(95, 80, 62, 0.671);
-}
-.left h4:hover{
-    color: rgba(153, 133, 109, 0.671);
-}
-
 .right a:visited{
     color: rgba(95, 80, 62, 0.671);
 }
 .right a:hover{
     color: rgba(153, 133, 109, 0.671);
+}
+
+h4.links:visited{
+    color: rgba(95, 80, 62, 0.671);
+}
+h4.links:hover{
+    color: rgba(153, 133, 109, 0.671);
+}
+
+.left p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#fichatec{
+    display: none;    
 }
 
 .noticias h3{
@@ -200,11 +210,13 @@ p.listado{
 .noticias div img{
     width: 100%;
     margin-bottom: 1rem;
-    /*height: 330px;*/
     border-width: 4px;
     border-style: double;
     border-color:rgba(141, 113, 81, 0.671);
     border-radius: 3%;
+}
+.noticias h4{
+    margin-top: 0rem;
 }
 
 hr{
@@ -236,13 +248,150 @@ footer div.outside img {
     margin-right: 2.5%;
     max-width: 2.5rem;
 }
-
-footer div.legales p{
+footer div.legales p{    
     margin-top: 2.5rem;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: center;
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 576px){
+/*MEDIA QUERY del menu hamburguesa a 830px (sino se superponen los li del nav)*/
+@media screen and (max-width: 830px){
+    .icon{
+        margin-top: 3%;
+        margin-left: 2%;
+        margin-right: 400px;
+        margin-bottom: 2%;
+        float: left;
+        display: block;        
+        padding: 2.5%;
+        background-color: #0e052593;
+        border-radius: 75px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .icon p{
+        font-size: 1.25rem;
+        text-align: center;
+        color:rgb(52, 94, 156);
+        font-weight: bolder;
+        font-family: 'Comfortaa', cursive; 
+    }
     
+    nav{
+        width: 100%;
+    }
+    ul{
+        display: none;
+        float: left;
+        max-width: 40%;
+    }
+    nav.responsive ul{
+        display: block;
+        padding: 15px 35px 15px 0px;
+    }
+    nav.responsive ul li{
+        display: block;
+        text-align: left;
+        padding: 1rem;
+        border-radius: 0rem ;
+        border-bottom-right-radius: 12px;        
+        background-color: #0e0525;
+        margin-bottom: 3%;
+        float: left;
+    }
+    nav.responsive ul li a{
+        font-size: 1.75rem;
+    }
+    nav.responsive p{        
+        color: rgb(0, 52, 129);
+        background-color: #0e0525e0;
+    }
+    nav.responsive .icon{
+        background-color: #0e0525e0;
+    }    
+    nav.responsive ul li:active{
+        background-color: #2d195ee0;
+    }
+    nav.responsive ul li a:active{
+        background-color: #2d195ee0;
+    }
+    header{
+        height: 530px;
+    }
+    #decoration{
+        display: none;
+    }
+    #fichatec{
+        display: block;
+        width: 58%;        
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #fichatec img{
+        margin-top: 2rem;
+        margin-bottom: 1%;
+    }
+    #fichatec h4{
+        text-align: left;
+        margin-left: 1%;
+    }
 }
+
+@media screen and (max-width: 576px){
+    aside{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    #fichatec{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    #fichatec h4{
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 3rem;
+    }
+    .noticias{
+        display: block;      
+    }
+    .noticias h3{
+        padding: 4%;
+    }
+    .noticias div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .noticias div:active{
+        background-color: #226d5871;
+        border-radius: 10px;
+    }
+    .noticias h4{
+        padding: 0rem;        
+        font-size: 1.4rem;
+    }
+    footer{
+        padding-top: 1rem;
+    }
+    footer div.outside{
+        width: 90%;
+    }
+    footer div.outside img{        
+        margin: 6% 3.5% 1% 3.5%;
+        max-width: 3rem;
+        padding: 1.2%;
+        border-radius: 50px;
+    }
+    footer div.outside img:active{
+        background-color: rgba(55, 94, 87, 0.719);
+    }
+    footer div.legales p{
+        font-size: 0.9rem;
+    }    
+}   

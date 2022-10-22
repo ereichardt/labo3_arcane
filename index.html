@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="icon" href="html/images/favicon2.png">
@@ -12,7 +13,8 @@
 <body>
     <header id="cielo">
         <h1>ARCANE</h1>        
-        <nav>
+        <nav id="navegador">            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="html/images/gemstone.png" alt="menu" class="fa fa-bars"><p>MENU</p></a>            
             <ul>
                 <li><a href="html/personajes.html">Personajes</a></li>
                 <li><a href="#">Temporadas</a></li>
@@ -25,6 +27,7 @@
     <section>
         <article>            
            <h2>Unofficial Fan Club</h2> 
+           <hr/>
         </article>        
         <article class="left">            
             <h3>Sinopsis</h3>
@@ -82,7 +85,7 @@
             <p class="listado">Roger Craig Smith como <em>Claggor</em></p>
             <p class="listado">Josh Keaton como <em>Deckard</em></p>
             <p class="listado">Shohreh Aghdashloo como <em>Enforcer Grayson</em></p>
-            <div>
+            <div id="decoration">
                 <img src="html/images/piltover.png" alt="logo piltover">
             </div>
         </aside>
@@ -100,7 +103,13 @@
                     <img src="html/images/filmaffinity.png" alt="Críticas en Film Affinity">
                     <h4 class="links">Críticas en FilmAffinity</h4>
                 </a>                
-            </div>
+            </div>            
+        </article>
+        <article id="fichatec">
+                <a href="#">
+                    <img src="html/images/piltover.png" alt="Ficha Tecnica">
+                    <h4 class="links">Ficha Técnica</h4>
+                </a>
         </article>
         <article class="noticias">
             <h3>Últimas Noticias</h3>
@@ -109,16 +118,19 @@
             <div>
                 <a href="https://www.espinof.com/series-de-ficcion/arcane-destrona-a-juego-calamar-se-convierte-serie-numero-1-netflix-a-nivel-mundial" target="_blank">
                     <img src="html/images/noticias/destronasquid.png" alt="Noticia Arcane serie numero uno en Netflix">
+                    <h4 class="links">N°1 en Netflix</h4>
                 </a>
             </div>
             <div>                
                 <a href="https://www.espinof.com/otros-festivales-de-cine/annie-2022-netflix-domina-grandes-premios-mundo-animacion-triunfos-arcane-mitchell-maquinas" target="_blank">
                     <img src="html/images/noticias/premiosannie.png" alt="Arcane galardonada en Premios Annie">
+                    <h4 class="links">La más Premiada</h4>
                 </a>
             </div>
             <div>
                 <a href="https://www.millenium.gg/noticias/43871.html" target="_blank">
                     <img src="html/images/noticias/temp2pronto2.png" alt="Temporada 2 en 2023">
+                    <h4 class="links">Coming Sooner</h4>
                 </a>
             </div>
         </article>      
@@ -136,6 +148,16 @@
             <p>Sitio creado por Erik Reichardt - Todas las marcas y logos registrados pertenecen a ©2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS</p>
         </div>        
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>
 
