@@ -183,6 +183,10 @@ h4.links:hover{
     margin-right: 20px;
 }
 
+#decoration img{
+    max-width: 80px;
+}
+
 #fichatec{
     display: none;    
 }
@@ -272,13 +276,15 @@ footer div.legales p{
         border-bottom-right-radius: 50px;
     }
     .icon p{
-        font-size: 1.25rem;
+        font-size: 0.85rem;
         text-align: center;
         color:rgb(52, 94, 156);
         font-weight: bolder;
         font-family: 'Comfortaa', cursive; 
     }
-    
+    #navegador img{
+        max-width: 45px;
+    }    
     nav{
         width: 100%;
     }
@@ -289,20 +295,20 @@ footer div.legales p{
     }
     nav.responsive ul{
         display: block;
-        padding: 15px 35px 15px 0px;
+        padding: 10px 20px 10px 0px;
     }
     nav.responsive ul li{
         display: block;
         text-align: left;
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 0rem ;
-        border-bottom-right-radius: 12px;        
+        border-bottom-right-radius: 25px;        
         background-color: #0e0525;
         margin-bottom: 3%;
         float: left;
     }
     nav.responsive ul li a{
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
     nav.responsive p{        
         color: rgb(0, 52, 129);
@@ -318,7 +324,7 @@ footer div.legales p{
         background-color: #2d195ee0;
     }
     header{
-        height: 530px;
+        height: 530px;                              /*mmm*/
     }
     #decoration{
         display: none;
@@ -333,14 +339,17 @@ footer div.legales p{
     #fichatec img{
         margin-top: 2rem;
         margin-bottom: 1%;
+        max-width: 80px;
     }
     #fichatec h4{
-        text-align: left;
-        margin-left: 1%;
+        display: none;
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px){    
+    header{
+        height: 440px;                              /*mmm*/
+    }
     aside{
         display: none;
     }
@@ -353,6 +362,7 @@ footer div.legales p{
         text-align: center;
     }
     #fichatec h4{
+        display: block;
         text-align: center;
         margin-left: 0%;
         margin-bottom: 3rem;
@@ -374,7 +384,7 @@ footer div.legales p{
     }
     .noticias h4{
         padding: 0rem;        
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     footer{
         padding-top: 1rem;
@@ -383,15 +393,15 @@ footer div.legales p{
         width: 90%;
     }
     footer div.outside img{        
-        margin: 6% 3.5% 1% 3.5%;
-        max-width: 3rem;
-        padding: 1.2%;
+        margin: 6% 4% 1.3% 4%;
+        max-width: 2.5rem;
+        padding: 1.3%;
         border-radius: 50px;
     }
     footer div.outside img:active{
         background-color: rgba(55, 94, 87, 0.719);
     }
     footer div.legales p{
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }    
 }   
