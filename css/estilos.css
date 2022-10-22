@@ -254,8 +254,8 @@ footer div.outside img {
 }
 footer div.legales p{    
     margin-top: 2.5rem;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -348,7 +348,7 @@ footer div.legales p{
 
 @media screen and (max-width: 576px){    
     header{
-        height: 440px;                              /*mmm*/
+        height: 420px;                              /*mmm*/
     }
     aside{
         display: none;
@@ -393,9 +393,9 @@ footer div.legales p{
         width: 90%;
     }
     footer div.outside img{        
-        margin: 6% 4% 1.3% 4%;
+        margin: 6% 3% 1.2% 3%;
         max-width: 2.5rem;
-        padding: 1.3%;
+        padding: 1.25%;
         border-radius: 50px;
     }
     footer div.outside img:active{
