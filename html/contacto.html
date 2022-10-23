@@ -4,79 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="css/estilos.css">-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon2.png">
     <title>Arcane Unofficial Fan Club</title>
 </head>
-<body>    <!--Se aplica a toda la pagina...  background="images/arcane banner.png"-->
-    <header>
-        <!--Usar un banner como background donde se pueda poner el nav por encima-->
-        <img src="images/arcane banner.png" alt="ARCANE BANNER">     
-        <h1>ARCANE</h1>                        <!--Dejarlo invisible y usar el titulo del banner?-->
-        <h2>Unofficial Fan Club</h2>
-        <nav>
+<body>
+    <header id="cielo">
+        <h1>ARCANE</h1>        
+        <nav id="navegador">            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/gemstone.png" alt="menu" class="fa fa-bars"><p>MENU</p></a>            
             <ul>
-                <li><a>Personajes</a></li>    <!--despliegue de menu con cada personaje?-->
-                <li><a>Temporadas</a></li>
-                <li><a>Media</a></li>
-                <li><a>Curiosidades</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>                
             </ul>
         </nav>
     </header>
     <section>
-        <!--Formulario de contacto de mozilla + boton de submit-->
-		<article class="contacto_izquierda">
-			<form action="/my-handling-form-page" method="post">
-                <ul>
-                 <li>
-                   <label for="name">Nombre:</label>
-                   <input type="text" id="name" name="user_name">
-                 </li>
-                 <li>
-                   <label for="mail">Correo electrónico:</label>
-                   <input type="email" id="mail" name="user_mail">
-                 </li>
-                 <li>
-                   <label for="msg">Mensaje:</label>
-                   <textarea id="msg" name="user_message"></textarea>
-                 </li>
-                 <li class="button">
-                    <button type="submit">Envíe su mensaje</button>
-                  </li>
-                </ul>
-               </form>
-		</article>
-		<article class="contacto_derecha">
-			<img src="images/contacto.png">
-		</article>
+        <article>            
+           <h2>Unofficial Fan Club</h2>
+           <hr/>
+           <h3 class="subtitulo">Contacto</h3> 
+        </article>
+        <article class="contact">
+            <div>
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <div class="input">
+                        <input type="text" id="name" name="user_name" placeholder="Heimerdinger" required="true">
+                    </div>
+                    <label for="mail">Correo electrónico:</label>
+                    <div class="input">
+                        <input type="email" id="mail" name="user_mail" placeholder="prof.heimer@ethos.com" required="true">
+                    </div>
+                    <label for="msg">Mensaje:</label>
+                    <div class="input">
+                        <textarea id="msg" name="user_message" placeholder="Eureka!" required="true"></textarea>
+                    </div>
+                    <div class="boton">
+                        <button type="submit">Enviar</button>
+                    </div>                    
+                </form>
+            </div>
+        </article>             
     </section>
-	<hr style="clear: both"/>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="https://arcane.com/es-mx/"><img src="images/sitiooficial.png" alt="Sitio Oficial Arcane"></a></li>
-                <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="images/navigation.png" alt="Navegación"></a></li>   <!--Navegacion Rapida del Sitio Web-->
-                <li><a href="#"><img src="images/contact.png" alt="Contacto"></a></li>   <!--Tiene sentido agregarlo?-->
-                <!--Boton para volver al inicio de la pagina??-->
-            </ul>
-            <!--Legales?-->
-            <p>©2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS y cualquier logotipo asociado a marcas registradas, marcas de servicio o marcas comerciales de Riot Games Inc.</p>
-        </nav>
+    <hr/>    
+    <footer>        
+        <div class="outside">           
+            <a href="https://arcane.com/es-mx/" target="_blank"><img src="images/redes/sitioarcane.png" alt="Sitio Oficial Arcane"></a>
+            <a href="https://www.instagram.com/arcaneshow/?hl=es" target="_blank"><img src="images/redes/instagram.png" alt="Instagram Oficial"></a>
+            <a href="https://twitter.com/arcaneshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/redes/twitter2.png" alt="Twitter Oficial"></a>
+            <a href="https://www.facebook.com/arcaneshow/" target="_blank"><img src="images/redes/facebook.png" alt="Facebook Oficial"></a>
+            <a href="#cielo"><img src="images/redes/piltover3.png" alt="Volver al Principio"></a>            
+        </div>
+        <div class="legales">
+            <p>Sitio creado por Erik Reichardt - Todas las marcas y logos registrados pertenecen a ©2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS</p>
+        </div>                
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>
-
-<!--CSS para el formulario-->
-.contacto_izquierda{
-	width: 60%;
-	float: left;
-}
-
-.contacto_derecha{
-	width: 40%;
-	float: right;
-}
-
-footer{
-	clear: both;
-}

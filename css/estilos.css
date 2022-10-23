@@ -223,9 +223,198 @@ h4.links:hover{
     margin-top: 0rem;
 }
 
+h3.subtitulo{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgba(141, 113, 81, 0.671);
+}
+/*-----------------------------------------Ficha tecnica----------------------------------------*/
+article.ficha{
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.ficha{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95rem;
+}
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Personajes Principales-------------------------------------*/
+.pjs{
+    margin-top: 3rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    align-content: center;   
+    align-items: center;
+    /*flex-flow: column wrap;                               para la version mobile?*/    
+}
+.pjs div{
+    width: 25%;
+    padding: 1%;
+}
+.pjs img{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 3%;
+}
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------Personajes Individuales-------------------------------------*/
+.pj{
+    width: 90%;
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;
+    justify-content: center;
+}
+.pj div{
+    margin-left: auto;    
+    margin-right: auto;
+    text-align: center;
+}
+.pj img{
+    width: 60%;
+    margin-left: auto;    
+    margin-right: auto;
+    border-width: 5px;
+    border-style: inset;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 5%;
+    box-shadow: 0px 0px 3px 2px rgb(82, 70, 1);
+}
+.pj p{
+    text-align: center;
+    margin-top: 1rem;
+}
+a.pj{
+    text-align: center;
+    font-size: 1.2rem;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin-top: 2rem;
+    margin-bottom: 1rem;    
+}
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Contacto---------------------------------------------*/
+.contact{
+    width: 98%;
+    height: 500px;
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;           /*???*/
+    background-image: url("../html/images/unused/media/puente\ entre\ zaun\ y\ piltover.png");
+    background-size: auto;
+    background-repeat: no-repeat; 
+    background-position-x: center;
+    filter: brightness(0.8);
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    padding: 1rem;
+}
+.contact div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact label{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    max-width: 35%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9rem;    
+	text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(0, 51, 26);    
+    padding: 12px;    
+    background-color: rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.contact .input{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 60%;
+    padding: 1%;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.contact input{
+    display: block;
+    text-align: center;
+    margin: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 80%;
+    padding: 5px;  
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+}
+.contact textarea{
+    width: 80%;
+    height: 3rem;     
+    border-radius: 5px;
+    resize: none;    
+    font-family: 'Comfortaa', cursive;
+}
+.contact .boton{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    text-align: center;
+    max-width: 20%;
+    padding: 1%;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.contact button{    
+    width: 90%;
+    margin: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 51, 26);    
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+}
+.contact button:hover{
+    color:rgb(26, 112, 71);
+    background-color: rgb(168, 168, 168);
+}
+.contact button:active{
+    color:rgb(65, 160, 114);
+    background-color: rgb(107, 107, 107);
+}
+/*----------------------------------------------------------------------------------------------*/
+
 hr{
     border-width: 4px;
-    border-color:rgba(141, 113, 81, 0.671);    
+    border-color:rgba(141, 113, 81, 0.671);
 }
 
 footer{
@@ -260,7 +449,7 @@ footer div.legales p{
     font-size: 0.8rem;
 }
 
-/*MEDIA QUERY del menu hamburguesa a 830px (sino se superponen los li del nav)*/
+/*---------MEDIA QUERY del menu hamburguesa a 830px (sino se superponen los li del nav)----------*/
 @media screen and (max-width: 830px){
     .icon{
         margin-top: 3%;
@@ -273,7 +462,7 @@ footer div.legales p{
         background-color: #0e052593;
         border-radius: 75px;
         border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-bottom-right-radius: 50px;        
     }
     .icon p{
         font-size: 0.85rem;
@@ -284,6 +473,12 @@ footer div.legales p{
     }
     #navegador img{
         max-width: 45px;
+        border-radius: 50%;
+        margin-bottom: 3%;
+        box-shadow:
+            0 0 5px #fff,
+            -1px 0 8px rgb(0, 110, 255),
+            1px 0 8px rgb(0, 153, 255);
     }    
     nav{
         width: 100%;
@@ -311,11 +506,20 @@ footer div.legales p{
         font-size: 1rem;
     }
     nav.responsive p{        
-        color: rgb(0, 52, 129);
-        background-color: #0e0525e0;
+        color: rgb(0, 18, 44);
     }
     nav.responsive .icon{
         background-color: #0e0525e0;
+
+        box-shadow:            
+            inset 0 0 5px #fff,
+            inset 2px 0 8px rgb(0, 110, 255),
+            inset -2px 0 8px #0ff,
+            inset 2px 0 30px rgb(0, 110, 255),
+            inset -2px 0 30px #0ff,
+            0 0 5px #fff,
+            -1px 0 8px rgb(0, 110, 255),
+            1px 0 8px rgb(0, 153, 255);
     }    
     nav.responsive ul li:active{
         background-color: #2d195ee0;
@@ -344,8 +548,40 @@ footer div.legales p{
     #fichatec h4{
         display: none;
     }
+    #fichatec .ficha{
+        width: 100%;
+    }
+    #fichatec #volta{
+        display: block;        
+    }
+    .pjs{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }    
+    .pjs div{
+        width: 50%;
+    }
+    .pj img{
+        width: 65%;
+    }
+    .pj p{
+        font-size: 0.80rem;
+    }
+    a.pj{
+        font-size: 1rem;
+    }
+    .contact label{
+        max-width: 50%;
+    }
+    .contact .input{
+        max-width: 75%;
+    }
+    .contact .boton{
+        max-width: 28%;
+    }
 }
 
+/*-----------------MEDIA QUERY para acomodar todo a tamaño celular-----------------*/
 @media screen and (max-width: 576px){    
     header{
         height: 420px;                              /*mmm*/
@@ -404,4 +640,16 @@ footer div.legales p{
     footer div.legales p{
         font-size: 0.75rem;
     }    
+    .pjs h4{
+        font-size: 0.85rem;
+    }
+    .pj img{
+        width: 70%;
+    }
+    .pj p{
+        font-size: 0.78rem;
+    }
+    a.pj{
+        font-size: 0.9rem;
+    }
 }   
