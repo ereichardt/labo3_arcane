@@ -3,14 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color:rgb(17, 22, 19);
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
-
 header {
     width: 100%;
     height: 600px;
@@ -18,28 +16,28 @@ header {
     margin-right: auto;
     display: flex;
     justify-content: center;
-    background-image: url("../html/images/arcane banner2.png");
+    background-image: url("../html/images/arcane banner2.webp");
     background-size: cover;
     background-repeat: no-repeat; 
     background-position-x: center;   
 }
-
+.interna{
+    height: 420px;
+    background-image: url("../html/images/zaun\ panorama.webp");
+}
 a:visited{
     color: rgba(95, 80, 62, 0.671);
 }
 a:hover{
     color: rgba(153, 133, 109, 0.671);
 }
-
 nav ul {
     margin-top: 2%;  
     justify-content: center;
 }
-
 nav ul li {
     display: inline-block;    
 }
-
 nav ul li a {
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;    
@@ -55,19 +53,15 @@ nav ul li a {
 nav ul li a:active{
     background-color: #0e05259a;
 }
-
 nav ul li a:visited{
     color: rgb(255, 208, 0);
 }
-
 .icon{
     display: none;
 }
-
 h1{
     display: none;
 }
-
 h2{
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
@@ -77,7 +71,6 @@ h2{
     color: rgba(141, 113, 81, 0.671);
     background-color: black;
 }
-
 h3{
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
@@ -86,7 +79,6 @@ h3{
     margin-top: 2rem;
     margin-bottom: 1.5%;
 }
-
 h4{
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
@@ -95,22 +87,18 @@ h4{
     margin-bottom: 1%;
     margin-top: 1rem;
 }
-
 h4.links{
     margin-top: 0.6rem;
     margin-bottom: 2rem;
     text-align: center;  
     text-decoration: none;     
 }
-
 a{
     text-decoration: none;
 }
-
 article.left{
     text-align: center;
 }
-
 article.left img{
     filter: brightness(0.8);
     border-top-right-radius: 3.5%;
@@ -121,25 +109,22 @@ article.left img{
     border-color:rgba(141, 113, 81, 0.671);
     margin-top: 1rem;
 }
-
 #critics{
     border-width: 4px;
     border-style: double;
     border-color:rgba(141, 113, 81, 0.671);
     border-radius: 15px;    
 }
-
 p{
     color: blanchedalmond;
     margin-bottom: 2.5%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9rem;
+    text-align: left;
 }
-
 p.listado{
     margin-bottom: 0.2rem;
 }
-
 .left{
     width: 58%;
     float: left;
@@ -149,13 +134,11 @@ p.listado{
     width: 40%;
     float: right;
 }
-
 .right a{
     color: rgba(141, 113, 81, 0.671);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.95rem;
 }
-
 .right div{
     width: 40%;
     align-content: center;
@@ -163,34 +146,28 @@ p.listado{
     margin-left: auto;
     margin-right: auto;
 }
-
 .right a:visited{
     color: rgba(95, 80, 62, 0.671);
 }
 .right a:hover{
     color: rgba(153, 133, 109, 0.671);
 }
-
 h4.links:visited{
     color: rgba(95, 80, 62, 0.671);
 }
 h4.links:hover{
     color: rgba(153, 133, 109, 0.671);
 }
-
 .left p{
     margin-left: 20px;
     margin-right: 20px;
 }
-
 #decoration img{
     max-width: 80px;
 }
-
 #fichatec{
     display: none;    
 }
-
 .noticias h3{
     max-width: 100%;
     margin-left: auto;
@@ -222,7 +199,6 @@ h4.links:hover{
 .noticias h4{
     margin-top: 0rem;
 }
-
 h3.subtitulo{
     font-family: 'Comfortaa', cursive;
     font-size: 1.25rem;
@@ -243,7 +219,9 @@ a.ficha{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.95rem;
 }
-/*----------------------------------------------------------------------------------------------*/
+.ficha p{
+    text-align: center;
+}
 /*-----------------------------------Personajes Principales-------------------------------------*/
 .pjs{
     margin-top: 3rem;
@@ -270,7 +248,6 @@ a.ficha{
     border-color:rgba(141, 113, 81, 0.671);
     border-radius: 3%;
 }
-/*----------------------------------------------------------------------------------------------*/
 /*----------------------------------Personajes Individuales-------------------------------------*/
 .pj{
     width: 90%;
@@ -294,8 +271,7 @@ a.ficha{
     border-radius: 5%;
     box-shadow: 0px 0px 3px 2px rgb(82, 70, 1);
 }
-.pj p{
-    text-align: center;
+.pj p{    
     margin-top: 1rem;
 }
 a.pj{
@@ -305,7 +281,6 @@ a.pj{
     margin-top: 2rem;
     margin-bottom: 1rem;    
 }
-/*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Contacto---------------------------------------------*/
 .contact{
     width: 98%;
@@ -314,8 +289,8 @@ a.pj{
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;           /*???*/
-    background-image: url("../html/images/unused/media/puente\ entre\ zaun\ y\ piltover.png");
+    justify-content: center;
+    background-image: url("../html/images/puente\ entre\ zaun\ y\ piltover.webp");
     background-size: auto;
     background-repeat: no-repeat; 
     background-position-x: center;
@@ -398,7 +373,7 @@ a.pj{
     color: rgb(0, 51, 26);    
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0;
     border-radius: 5px;
     background-color: rgb(226, 226, 226);
 }
@@ -410,13 +385,91 @@ a.pj{
     color:rgb(65, 160, 114);
     background-color: rgb(107, 107, 107);
 }
+/*----------------------------------------Temporadas--------------------------------------------*/
+.seasons{    
+    font-family: 'Comfortaa', cursive;
+    margin: 2.5rem;
+    text-align: center;     
+}
+.seasons table{
+    width: 100%;
+    border-style: double;
+    border-color: rgba(141, 113, 81, 0.671);
+    border-radius: 2%;
+    color: black;
+    background-color: rgb(71, 43, 0);
+    background-color: #031b1471;
+    filter: brightness(0.75);
+}
+.seasons caption{
+    color: burlywood;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.seasons th, td{
+    padding: 0.2%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+    background-color: rgb(235, 235, 235);
+}
+.seasons th{        
+    background-color:rgb(26, 68, 71);
+    color: rgb(235, 235, 235);
+    text-align: center; 
+}
+/*----------------------------------------Easter Eggs-------------------------------------------*/
+.eggs{
+    text-align: center;
+    margin: 3rem;
+}
+.eggs iframe{
+    margin: 2%;
+    max-width: 90%;
+}
+.eggs p{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*----------------------------------------Multimedia--------------------------------------------*/
+.media{
+    text-align: center;
+    margin: 3rem;
+}
+.media iframe{
+    margin: 2%;
+    max-width: 90%;
+}
+.media p{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.media h4{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.media .galeria{
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 15px; 
+    background-color: #031b1471;
+    padding: 2%;
+}
+.galeria img{
+    border-width: 4px;
+    border-style: double;
+    border-color:rgba(141, 113, 81, 0.671);
+    border-radius: 3%;
+}
 /*----------------------------------------------------------------------------------------------*/
-
 hr{
     border-width: 4px;
     border-color:rgba(141, 113, 81, 0.671);
 }
-
 footer{
     padding-top: 3rem;
     display: block;
@@ -427,13 +480,11 @@ footer{
     background-repeat: no-repeat;  
     background-position-x: center;
 }
-
 footer div.outside{    
     margin-left: auto;
     margin-right: auto;
     width: 65%;
 }
-
 footer div.outside img {
     padding-top: 2rem;
     width: 100%;
@@ -510,7 +561,6 @@ footer div.legales p{
     }
     nav.responsive .icon{
         background-color: #0e0525e0;
-
         box-shadow:            
             inset 0 0 5px #fff,
             inset 2px 0 8px rgb(0, 110, 255),
@@ -528,7 +578,7 @@ footer div.legales p{
         background-color: #2d195ee0;
     }
     header{
-        height: 530px;                              /*mmm*/
+        height: 530px;
     }
     #decoration{
         display: none;
@@ -579,12 +629,23 @@ footer div.legales p{
     .contact .boton{
         max-width: 28%;
     }
+    .seasons .sino{
+        display: none;
+    }
+    .eggs iframe{
+        width: 480px;
+        height: 270px;
+    }
+    .media iframe{
+        width: 480px;
+        height: 270px;
+    }
 }
 
 /*-----------------MEDIA QUERY para acomodar todo a tamaño celular-----------------*/
 @media screen and (max-width: 576px){    
     header{
-        height: 420px;                              /*mmm*/
+        height: 420px;
     }
     aside{
         display: none;
@@ -651,5 +712,13 @@ footer div.legales p{
     }
     a.pj{
         font-size: 0.9rem;
+    }
+    .eggs iframe{
+        width: 370px;
+        height: 208px;
+    }
+    .media iframe{
+        width: 370px;
+        height: 208px;
     }
 }   
