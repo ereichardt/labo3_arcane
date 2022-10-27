@@ -25,6 +25,12 @@ header {
     height: 420px;
     background-image: url("../html/images/zaun\ panorama.webp");
 }
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 138px;
+    height: 32px;
+}
 a:visited{
     color: rgba(95, 80, 62, 0.671);
 }
@@ -36,7 +42,7 @@ nav ul {
     justify-content: center;
 }
 nav ul li {
-    display: inline-block;    
+    display: inline-block;
 }
 nav ul li a {
     font-family: 'Comfortaa', cursive;
@@ -399,7 +405,7 @@ a.pj{
     color: black;
     background-color: rgb(71, 43, 0);
     background-color: #031b1471;
-    filter: brightness(0.75);
+    filter: brightness(0.8);
 }
 .seasons caption{
     color: burlywood;
@@ -505,7 +511,7 @@ footer div.legales p{
     .icon{
         margin-top: 3%;
         margin-left: 2%;
-        margin-right: 400px;
+        margin-right: 420px;
         margin-bottom: 2%;
         float: left;
         display: block;        
@@ -537,7 +543,7 @@ footer div.legales p{
     ul{
         display: none;
         float: left;
-        max-width: 40%;
+        max-width: 38%;
     }
     nav.responsive ul{
         display: block;
@@ -639,13 +645,16 @@ footer div.legales p{
     .media iframe{
         width: 480px;
         height: 270px;
-    }
+    }    
 }
 
 /*-----------------MEDIA QUERY para acomodar todo a tamaño celular-----------------*/
 @media screen and (max-width: 576px){    
     header{
         height: 420px;
+    }
+    .interna{
+        height: 350px;
     }
     aside{
         display: none;
@@ -713,6 +722,9 @@ footer div.legales p{
     a.pj{
         font-size: 0.9rem;
     }
+    .eggs{
+        margin: 2rem 0.3rem;
+    }
     .eggs iframe{
         width: 370px;
         height: 208px;
@@ -720,5 +732,20 @@ footer div.legales p{
     .media iframe{
         width: 370px;
         height: 208px;
+    }
+    .media{
+        margin: 2rem 0.3rem;
+    }
+    .media h4{
+        margin: 1.3rem 0 0.5rem 0;
+    }
+    .media p{
+        margin-bottom: 2rem;
+    }
+    .seasons{    
+        margin: 0.35rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        overflow: auto;     
     }
 }   
