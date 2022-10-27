@@ -31,6 +31,10 @@ header {
     width: 138px;
     height: 32px;
 }
+a{
+    text-decoration: none;
+    color: rgba(141, 113, 81, 0.671);
+}
 a:visited{
     color: rgba(95, 80, 62, 0.671);
 }
@@ -99,9 +103,7 @@ h4.links{
     text-align: center;  
     text-decoration: none;     
 }
-a{
-    text-decoration: none;
-}
+
 article.left{
     text-align: center;
 }
@@ -224,9 +226,13 @@ article.ficha{
 a.ficha{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.95rem;
+    color: rgba(141, 113, 81, 0.671);
 }
 .ficha p{
     text-align: center;
+}
+a.ficha:visited{
+    color: rgba(95, 80, 62, 0.671);
 }
 /*-----------------------------------Personajes Principales-------------------------------------*/
 .pjs{
